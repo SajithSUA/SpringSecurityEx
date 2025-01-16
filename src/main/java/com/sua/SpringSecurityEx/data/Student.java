@@ -3,9 +3,11 @@ package com.sua.SpringSecurityEx.data;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.io.Serializable;
+
 @Getter
 @Setter
-public class Student {
+public class Student implements Serializable {
     private String name;
     private int id;
     private int mark;
