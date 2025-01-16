@@ -28,8 +28,15 @@ public class UserService {
         return userRepo.save(users);
     }
 
+    /**
+     * Verify user
+     * @param user user
+     * @return JWT token
+     */
     public String verify(Users user) {
-        Authentication authentication = authenticationManager.authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
+        // Authenticate user
+        Authentication authentication = authenticationManager
+                .authenticate(new UsernamePasswordAuthenticationToken(user.getUsername(), user.getPassword()));
 
         if (authentication.isAuthenticated()) {
             return jwtService.generateToken(user.getUsername());
