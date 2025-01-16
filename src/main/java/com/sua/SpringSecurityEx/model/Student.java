@@ -1,4 +1,4 @@
-package com.sua.SpringSecurityEx.data;
+package com.sua.SpringSecurityEx.model;
 
 import lombok.Getter;
 import lombok.Setter;

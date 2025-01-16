@@ -1,6 +1,6 @@
 package com.sua.SpringSecurityEx.controller;
 
-import com.sua.SpringSecurityEx.data.Student;
+import com.sua.SpringSecurityEx.model.Student;
 import jakarta.servlet.http.HttpServletRequest;
 import org.springframework.security.web.csrf.CsrfToken;
 import org.springframework.web.bind.annotation.GetMapping;
